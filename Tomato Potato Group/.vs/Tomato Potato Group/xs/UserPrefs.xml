@@ -1,22 +1,28 @@
 ﻿<Properties StartupConfiguration="{0AD479C3-0D08-CBC1-64CD-DFC2CEAE28BD}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerName.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/LobbyManager.cs">
     <Files>
       <File FileName="Assets/Scripts/PlayerName.cs" Line="13" Column="34" />
-      <File FileName="Assets/Scripts/NetworkManager.cs" Line="19" Column="43" />
-      <File FileName="Assets/Scripts/RoomName.cs" Line="25" Column="6" />
-      <File FileName="Assets/Scripts/PlayerName.cs" Line="7" Column="20" />
+      <File FileName="Assets/Scripts/NetworkManager.cs" />
+      <File FileName="Assets/Scripts/RoomName.cs" />
+      <File FileName="Assets/Scripts/LobbyManager.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Tomato Potato Group" expanded="True" selected="True" />
+          <Node name="Tomato Potato Group" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="PlayerName.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="4bad1ffb-1c6a-4863-bca3-f7d857e6928d" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f1688ce2-af13-4ee8-a2cd-98d7adbe4925" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

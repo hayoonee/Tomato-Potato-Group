@@ -69,6 +69,10 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     {
         PhotonNetwork.LeaveRoom();
     }
+    public override void OnJoinedLobby()
+    {
+        Debug.Log("Joined lobby");
+    }
 
     public override void OnLeftRoom()
     {
