@@ -9,7 +9,12 @@ public class CardDisplay : MonoBehaviour
 
     public Image image;
 
-    void Start()
+    private void Start()
+    {
+        //card = GetComponent<DeckManager>().deck[0];
+    }
+
+    void Update()
     {
         image.sprite = card.cardImage;
     }

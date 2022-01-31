@@ -63,6 +63,10 @@
     <Compile Include="Assets\Scripts\NetworkManager.cs" />
     <Compile Include="Assets\CardDisplay.cs" />
     <Compile Include="Assets\DeckManager.cs" />
+    <Compile Include="Assets\CardBack.cs" />
+    <Compile Include="Assets\CardToHand.cs" />
+    <Compile Include="Assets\DrawCard.cs" />
+    <Compile Include="Assets\CardDrawButton.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
