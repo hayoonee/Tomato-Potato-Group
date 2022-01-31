@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 [System.Serializable]
 
-[CreateAssetMenu(fileName = "new card", menuName = "cards")]
+[CreateAssetMenu(fileName = "New Card", menuName = "Card")]
 public class Card : ScriptableObject
 {
     public int cardNumber;

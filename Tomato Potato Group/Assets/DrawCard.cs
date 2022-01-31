@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(DeckManager))]
 public class DrawCard : MonoBehaviour
 {
+    
     public GameObject drawnCard;
     public GameObject playerArea;
     private Card drawnCardInfo;
@@ -14,24 +16,24 @@ public class DrawCard : MonoBehaviour
     {
         deck = GetComponent<DeckManager>().deck;
         drawnCardInfo = drawnCard.GetComponent<CardDisplay>().card;
-        CardDraw(4);
+        //CardDraw(4);
     }
 
-    public void CardDraw(int cardsDrawn)
-    {
-        for(int i = 0; i < cardsDrawn; i++)
-        {
-            Instantiate(drawnCard, playerArea.transform.position, Quaternion.identity);
-            CardBack.cardBack = false;
-            drawnCard.GetComponent<CardBack>().CardBackActive();
+    //public void CardDraw(int cardsDrawn)
+    //{
+    //    for(int i = 0; i < cardsDrawn; i++)
+    //    {
+    //        Instantiate(drawnCard, playerArea.transform.position, Quaternion.identity);
+    //        CardBack.cardBack = false;
+    //        drawnCard.GetComponent<CardBack>().CardBackActive();
 
-            playerArea = GameObject.Find("Player Area");
-            drawnCard.transform.SetParent(playerArea.transform);
-            drawnCard.transform.localScale = Vector3.one;
+    //        playerArea = GameObject.Find("Player Area");
+    //        drawnCard.transform.SetParent(playerArea.transform);
+    //        drawnCard.transform.localScale = Vector3.one;
 
-            drawnCardInfo = deck[0];
-            deck.RemoveAt(0);
+    //        drawnCardInfo = deck[0];
+    //        deck.RemoveAt(0);
 
-        }
-    }
+    //    }
+    //}
 }

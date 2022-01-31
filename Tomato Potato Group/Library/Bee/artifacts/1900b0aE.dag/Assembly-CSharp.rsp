@@ -358,8 +358,6 @@
 "Assets/CardBack.cs"
 "Assets/CardDisplay.cs"
 "Assets/CardDrag.cs"
-"Assets/CardDrawButton.cs"
-"Assets/CardToHand.cs"
 "Assets/DeckManager.cs"
 "Assets/DrawCard.cs"
 "Assets/Photon/PhotonLibs/WebSocket/SocketWebTcp.cs"

@@ -26,16 +26,16 @@ public class DeckManager : MonoBehaviour
         }
     }
 
-    //public void Shuffle()
-    //{
-    //    for (int i = 0; i < deck.Count; i++)
-    //    {
-    //        container[0] = deck[i];
-    //        int randomIndex = Random.Range(i, deck.Count);
-    //        deck[i] = deck[randomIndex];
-    //        deck[randomIndex] = container[0];
-    //    }
-    //}
+    public void Shuffle()
+    {
+        for (int i = 0; i < deck.Count; i++)
+        {
+            container[0] = deck[i];
+            int randomindex = Random.Range(i, deck.Count);
+            deck[i] = deck[randomindex];
+            deck[randomindex] = container[0];
+        }
+    }
     void Start()
     {
         //Shuffle();
@@ -67,8 +67,6 @@ public class DeckManager : MonoBehaviour
         {
 
             GameObject instantiatedCard = Instantiate(drawnCard, playerArea.transform.position, Quaternion.identity);
-            //drawnCardInfo = deck[0];
-            //instantiatedCard.GetComponent<CardDisplay>().card = drawnCardInfo;
 
             CardBack.cardBack = false;
             drawnCard.GetComponent<CardBack>().CardBackActive();
@@ -77,6 +75,8 @@ public class DeckManager : MonoBehaviour
             instantiatedCard.transform.SetParent(playerArea.transform);
             instantiatedCard.transform.localScale = Vector3.one;
 
+            drawnCardInfo = deck[0];
+            instantiatedCard.GetComponent<CardDisplay>().card = drawnCardInfo;
             deck.RemoveAt(0);
 
         }
