@@ -110,6 +110,33 @@
 -define:PUN_2_0_OR_NEWER
 -define:PUN_2_OR_NEWER
 -define:PUN_2_19_OR_NEWER
+-define:MIRROR
+-define:MIRROR_17_0_OR_NEWER
+-define:MIRROR_18_0_OR_NEWER
+-define:MIRROR_24_0_OR_NEWER
+-define:MIRROR_26_0_OR_NEWER
+-define:MIRROR_27_0_OR_NEWER
+-define:MIRROR_28_0_OR_NEWER
+-define:MIRROR_29_0_OR_NEWER
+-define:MIRROR_30_0_OR_NEWER
+-define:MIRROR_30_5_2_OR_NEWER
+-define:MIRROR_32_1_2_OR_NEWER
+-define:MIRROR_32_1_4_OR_NEWER
+-define:MIRROR_35_0_OR_NEWER
+-define:MIRROR_35_1_OR_NEWER
+-define:MIRROR_37_0_OR_NEWER
+-define:MIRROR_38_0_OR_NEWER
+-define:MIRROR_39_0_OR_NEWER
+-define:MIRROR_40_0_OR_NEWER
+-define:MIRROR_41_0_OR_NEWER
+-define:MIRROR_42_0_OR_NEWER
+-define:MIRROR_43_0_OR_NEWER
+-define:MIRROR_44_0_OR_NEWER
+-define:MIRROR_46_0_OR_NEWER
+-define:MIRROR_47_0_OR_NEWER
+-define:MIRROR_53_0_OR_NEWER
+-define:MIRROR_55_0_OR_NEWER
+-define:MIRROR_57_0_OR_NEWER
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"/Applications/Unity/Hub/Editor/2021.1.18f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll"
@@ -306,10 +333,22 @@
 -r:"/Applications/Unity/Hub/Editor/2021.1.18f1/Unity.app/Contents/NetStandard/Extensions/2.0.0/System.Numerics.Vectors.dll"
 -r:"/Applications/Unity/Hub/Editor/2021.1.18f1/Unity.app/Contents/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
 -r:"/Applications/Unity/Hub/Editor/2021.1.18f1/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll"
--r:"/Users/hayoon/Documents/GitHub/Tomato-Potato-Group/Tomato Potato Group/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll"
--r:"/Users/hayoon/Documents/GitHub/Tomato-Potato-Group/Tomato Potato Group/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"/Users/hayoon/Documents/Tomato-Potato-Group/Tomato Potato Group/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll"
+-r:"/Users/hayoon/Documents/Tomato-Potato-Group/Tomato Potato Group/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.dll"
+-r:"Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Mdb.dll"
+-r:"Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Pdb.dll"
+-r:"Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Rocks.dll"
 -r:"Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll"
 -r:"Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/kcp2k.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/Mirror.Authenticators.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/Mirror.CompilerSymbols.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/Mirror.Components.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/Mirror.Editor.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/Mirror.Examples.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/Mirror.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/ParrelSync.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/PhotonChat.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/PhotonRealtime.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/PhotonUnityNetworking.Editor.ref.dll"
@@ -318,6 +357,8 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/PhotonUnityNetworking.Utilities.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/PsdPlugin.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/SimpleWebTransport.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/Telepathy.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.2D.Animation.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.2D.Animation.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.2D.Animation.Triangle.Runtime.ref.dll"
@@ -356,12 +397,18 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/VSSettingsProvider.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/where-allocations.ref.dll"
+"Assets/CardDrag.cs"
+"Assets/DrawCards.cs"
+"Assets/ParrelSync/Examples/CustomArgumentExample.cs"
 "Assets/Photon/PhotonLibs/WebSocket/SocketWebTcp.cs"
 "Assets/Photon/PhotonLibs/WebSocket/WebSocket.cs"
 "Assets/Scripts/LobbyManager.cs"
 "Assets/Scripts/NetworkManager.cs"
+"Assets/Scripts/Player.cs"
 "Assets/Scripts/PlayerName.cs"
 "Assets/Scripts/RoomName.cs"
+"Assets/Scripts/ServerNetworkManager.cs"
 -langversion:8.0
 
 /deterministic
