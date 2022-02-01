@@ -8,11 +8,11 @@ using Photon.Realtime;
 
 public class NetworkManager : MonoBehaviourPunCallbacks
 {
-    //string gameVersion = "1";
+    string gameVersion = "1";
 
     public TMPro.TMP_InputField usernameInput;
     public TMPro.TMP_Text buttonText;
-    public GameObject howToPlayText;
+
   
     public void ClickConnect()
     {
@@ -20,23 +20,9 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         {
             PhotonNetwork.NickName = usernameInput.text;
             buttonText.text = "Connecting...";
-            //PhotonNetwork.GameVersion = gameVersion;
+            PhotonNetwork.GameVersion = gameVersion;
             PhotonNetwork.ConnectUsingSettings();
-
-            Debug.Log("Connected to the server");
         }
-    }
-
-    public void HowToPlay()
-    {
-        howToPlayText.SetActive(true);
-        
-
-    }
-
-    public void OkayButton()
-    {
-        howToPlayText.SetActive(false);
     }
 
     public override void OnConnectedToMaster()

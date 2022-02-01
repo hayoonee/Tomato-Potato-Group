@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"m_AlwaysRefresh":false,"showFog":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":true,"pivot":{"x":590.2559814453125,"y":427.679931640625,"z":-317.201904296875},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":771.593505859375,"orthographic":true}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"m_AlwaysRefresh":false,"showFog":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":true,"pivot":{"x":1107.314208984375,"y":543.9692993164063,"z":-394.01025390625},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":602.5598754882813,"orthographic":true}
+>>>>>>> Mustafa-Gameplay

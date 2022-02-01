@@ -36,7 +36,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     {
         lobbyPanel.SetActive(false);
         roomPanel.SetActive(true);
-        roomName.text = PhotonNetwork.CurrentRoom.Name;
+        roomName.text = "Room Name: " + PhotonNetwork.CurrentRoom.Name;
     }
 
     public override void OnRoomListUpdate(List<RoomInfo> roomList)
@@ -55,11 +55,6 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
         foreach(RoomInfo room in list)
         {
-            if (room.RemovedFromList)
-            {
-                return;
-            }
-
             RoomName newRoom = Instantiate(roomNamePrefab, contentObject);
             newRoom.SetRoomName(room.Name);
             roomNameList.Add(newRoom);
