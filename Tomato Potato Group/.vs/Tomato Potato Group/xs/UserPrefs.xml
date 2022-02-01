@@ -2,10 +2,11 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/LobbyManager.cs">
     <Files>
       <File FileName="Assets/Scripts/PlayerName.cs" Line="13" Column="34" />
-      <File FileName="Assets/Scripts/NetworkManager.cs" Line="26" Column="50" />
+      <File FileName="Assets/Scripts/NetworkManager.cs" Line="34" Column="1" />
       <File FileName="Assets/Scripts/RoomName.cs" Line="19" Column="35" />
-      <File FileName="Assets/Scripts/LobbyManager.cs" Line="64" Column="44" />
+      <File FileName="Assets/Scripts/LobbyManager.cs" Line="70" Column="42" />
       <File FileName="Assets/Scripts/ServerNetworkManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Player.cs" Line="45" Column="8" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -23,7 +24,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f11fb08f-27e2-4780-9efb-4ab08cf7421d" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="1e12a966-97a8-486e-a656-727bab66bb80" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
