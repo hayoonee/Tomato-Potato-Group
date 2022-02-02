@@ -55,6 +55,11 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
         foreach(RoomInfo room in list)
         {
+            if (room.RemovedFromList)
+            {
+                return;
+            }
+
             RoomName newRoom = Instantiate(roomNamePrefab, contentObject);
             newRoom.SetRoomName(room.Name);
             roomNameList.Add(newRoom);

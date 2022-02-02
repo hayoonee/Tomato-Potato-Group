@@ -12,8 +12,8 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     public TMPro.TMP_InputField usernameInput;
     public TMPro.TMP_Text buttonText;
+    public GameObject howToPlayText;
 
-  
     public void ClickConnect()
     {
         if(usernameInput.text.Length >= 1)
@@ -24,6 +24,19 @@ public class NetworkManager : MonoBehaviourPunCallbacks
             PhotonNetwork.ConnectUsingSettings();
         }
     }
+
+    public void HowToPlay()
+    {
+        howToPlayText.SetActive(true);
+
+
+    }
+
+    public void OkayButton()
+    {
+        howToPlayText.SetActive(false);
+    }
+
 
     public override void OnConnectedToMaster()
     {
