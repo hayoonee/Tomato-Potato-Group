@@ -92,6 +92,8 @@ GameObject:
   - component: {fileID: 8692323897251592806}
   - component: {fileID: 2788413549063932233}
   - component: {fileID: 7736769883076815725}
+  - component: {fileID: -5868012932120493750}
+  - component: {fileID: 7780189969823877813}
   m_Layer: 6
   m_Name: Card
   m_TagString: Untagged
@@ -212,7 +214,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1590849399591330838}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 998af45963195104794ba1a195df2713, type: 3}
+  m_Script: {fileID: 11500000, guid: b7a590fd7a3b4467b9d8d395989dc78a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Canvas: {fileID: 0}
@@ -226,7 +228,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1590849399591330838}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b36bf0eea4aef74e979cee594f70cf5, type: 3}
+  m_Script: {fileID: 11500000, guid: e188d99b08cef4ea596156970e7a13c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cardBackImage: {fileID: 2107957564}
@@ -239,7 +241,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1590849399591330838}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2e97cccd7fbeb04a8ad4f3f600d633e, type: 3}
+  m_Script: {fileID: 11500000, guid: 871e46c3fa9be4c7cbe38f63665cb6a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   card: {fileID: 0}
@@ -291,6 +293,57 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 7
+--- !u!114 &-5868012932120493750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590849399591330838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneId: 0
+  serverOnly: 0
+  visible: 0
+  m_AssetId: f70be0dd057806348821aef4cb48bae8
+  hasSpawned: 0
+--- !u!114 &7780189969823877813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590849399591330838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f74aedd71d9a4f55b3ce499326d45fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  clientAuthority: 1
+  sendInterval: 0.05
+  syncPosition: 1
+  syncRotation: 1
+  syncScale: 0
+  interpolatePosition: 1
+  interpolateRotation: 1
+  interpolateScale: 0
+  bufferTimeMultiplier: 1
+  bufferSizeLimit: 64
+  catchupThreshold: 4
+  catchupMultiplier: 0.1
+  onlySyncOnChange: 1
+  bufferResetMultiplier: 5
+  positionSensitivity: 0.01
+  rotationSensitivity: 0.01
+  scaleSensitivity: 0.01
+  showGizmos: 0
+  showOverlay: 0
+  overlayColor: {r: 0, g: 0, b: 0, a: 0.5}
 --- !u!1 &1590849400530783788
 GameObject:
   m_ObjectHideFlags: 0

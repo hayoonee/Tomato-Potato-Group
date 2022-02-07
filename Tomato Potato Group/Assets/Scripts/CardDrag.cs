@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Mirror;
 
-public class CardDrag : MonoBehaviour
+public class CardDrag : NetworkBehaviour
 {
     public GameObject Canvas;
-    public GameObject DropZone;
+    public PlayerManager playerManager;
 
     private bool isDragging = false;
+    private bool isDraggable = true;
     private GameObject startParent;
     private GameObject dropZone;
     private Vector2 startPosition;
@@ -16,11 +18,15 @@ public class CardDrag : MonoBehaviour
     void Start()
     {
         Canvas = GameObject.Find("Main Canvas");
-        DropZone = GameObject.Find("Drop Zone");
+        if (!hasAuthority)
+        {
+            isDraggable = false;
+        }
     }
 
     public void StartDrag()
     {
+        if (!isDraggable) return;
         isDragging = true;
         startParent = transform.parent.gameObject;
         startPosition = transform.position;
@@ -28,11 +34,16 @@ public class CardDrag : MonoBehaviour
 
     public void StopDrag()
     {
+        if (!isDraggable) return;
         isDragging = false;
         if(isOverDropZone)
         {
             transform.SetParent(dropZone.transform, false);
             GetComponent<CardDrag>().enabled = false;
+            isDraggable = false;
+            NetworkIdentity networkIdentity = NetworkClient.connection.identity;
+            playerManager = networkIdentity.GetComponent<PlayerManager>();
+            playerManager.PlayCard(gameObject);
         }
         else
         {

@@ -13,38 +13,27 @@ public class DeckManager : MonoBehaviour
     public GameObject deckCard3;
     public GameObject deckCard4;
 
-    public GameObject drawnCard;
+    //public GameObject drawnCard;
     public GameObject playerArea;
 
-    public Card drawnCardInfo;
+    //public Card drawnCardInfo;
 
-    void Awake()
-    {
-        foreach(Card data in Resources.LoadAll<Card>("Cards/"))
-        {
-            deck.Add(data);
-        }
-    }
+    //void Awake()
+    //{
+        
+    //}
 
-    public void Shuffle()
-    {
-        for (int i = 0; i < deck.Count; i++)
-        {
-            container[0] = deck[i];
-            int randomindex = Random.Range(i, deck.Count);
-            deck[i] = deck[randomindex];
-            deck[randomindex] = container[0];
-        }
-    }
     void Start()
     {
         //Shuffle();
-        CardDraw(4);
+        //CardDraw(4);
     }
 
     void Update()
     {
-        if(deck.Count < 30)
+        deck = GetComponent<PlayerManager>().deck;
+
+        if (deck.Count < 30)
         {
             deckCard1.SetActive(false);
         }
@@ -61,24 +50,35 @@ public class DeckManager : MonoBehaviour
             deckCard4.SetActive(false);
         }
     }
-    public void CardDraw(int cardsDrawn)
+    //public void CardDraw(int cardsDrawn)
+    //{
+    //    for (int i = 0; i < cardsDrawn; i++)
+    //    {
+
+    //        GameObject instantiatedCard = Instantiate(drawnCard, playerArea.transform.position, Quaternion.identity);
+
+    //        CardBack.cardBack = false;
+    //        drawnCard.GetComponent<CardBack>().CardBackActive();
+
+    //        playerArea = GameObject.Find("Player Area");
+    //        instantiatedCard.transform.SetParent(playerArea.transform);
+    //        instantiatedCard.transform.localScale = Vector3.one;
+
+    //        drawnCardInfo = deck[0];
+    //        instantiatedCard.GetComponent<CardDisplay>().card = drawnCardInfo;
+    //        deck.RemoveAt(0);
+
+    //    }
+    //}
+    public void Shuffle()
     {
-        for (int i = 0; i < cardsDrawn; i++)
+        for (int i = 0; i < deck.Count; i++)
         {
-
-            GameObject instantiatedCard = Instantiate(drawnCard, playerArea.transform.position, Quaternion.identity);
-
-            CardBack.cardBack = false;
-            drawnCard.GetComponent<CardBack>().CardBackActive();
-
-            playerArea = GameObject.Find("Player Area");
-            instantiatedCard.transform.SetParent(playerArea.transform);
-            instantiatedCard.transform.localScale = Vector3.one;
-
-            drawnCardInfo = deck[0];
-            instantiatedCard.GetComponent<CardDisplay>().card = drawnCardInfo;
-            deck.RemoveAt(0);
-
+            container[0] = deck[i];
+            int randomindex = Random.Range(i, deck.Count);
+            deck[i] = deck[randomindex];
+            deck[randomindex] = container[0];
         }
     }
+
 }
