@@ -21,6 +21,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
             PhotonNetwork.NickName = usernameInput.text;
             buttonText.text = "Connecting...";
             PhotonNetwork.GameVersion = gameVersion;
+            PhotonNetwork.AutomaticallySyncScene = true;
             PhotonNetwork.ConnectUsingSettings();
         }
     }
